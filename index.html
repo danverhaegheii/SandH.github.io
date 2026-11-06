@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0d0b">
+  <meta name="description" content="Official social media links for Sharrow and Hughey.">
+  <title>Sharrow and Hughey | Official Links</title>
+  <style>
+    :root {
+      --ink: #f4efe4;
+      --muted: #bcb4a5;
+      --accent: #d59b47;
+      --accent-strong: #efb85f;
+      --surface: #181613;
+      --line: rgba(244, 239, 228, 0.20);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { min-height: 100%; background: #0e0d0b; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 28px 18px;
+      display: grid;
+      place-items: center;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        linear-gradient(rgba(14, 13, 11, 0.82), rgba(14, 13, 11, 0.94)),
+        repeating-linear-gradient(117deg, transparent 0 18px, rgba(255,255,255,0.018) 19px 20px),
+        #0e0d0b;
+    }
+
+    main {
+      position: relative;
+      width: min(100%, 520px);
+      padding: clamp(24px, 7vw, 46px);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(31, 28, 23, 0.98), rgba(18, 16, 14, 0.98));
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.45);
+    }
+
+    main::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 5px;
+      background: var(--accent);
+    }
+
+    header {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      width: min(100%, 340px);
+      height: auto;
+      margin: 0 auto;
+      border: 1px solid rgba(244, 239, 228, 0.12);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+    }
+
+    .kicker {
+      margin: 18px 0 0;
+      color: var(--accent-strong);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .intro {
+      margin: 26px 0 18px;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+
+    nav { display: grid; gap: 12px; }
+
+    .social-link {
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 15px 17px 15px 19px;
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.035em;
+      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+    }
+
+    .arrow {
+      color: var(--accent-strong);
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .social-link:hover,
+    .social-link:focus-visible {
+      transform: translateX(4px);
+      border-color: var(--accent);
+      background: #211d17;
+      outline: none;
+    }
+
+    .social-link:focus-visible {
+      box-shadow: 0 0 0 3px rgba(213, 155, 71, 0.25);
+    }
+
+    footer {
+      margin-top: 26px;
+      color: #8f887c;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.70rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 430px) {
+      main { padding: 26px 22px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .social-link { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img class="logo" src="S%26H%20LOGO.jpeg" alt="Sharrow and Hughey band logo">
+      <h1 class="sr-only">Sharrow and Hughey</h1>
+      <p class="kicker">Official links</p>
+    </header>
+
+    <p class="intro">Follow Sharrow and Hughey across social media.</p>
+
+    <nav aria-label="Sharrow and Hughey social media links">
+      <a class="social-link" href="https://www.facebook.com/profile.php?id=61587095155114" target="_blank" rel="noopener noreferrer">
+        <span>Facebook</span><span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="social-link" href="https://www.instagram.com/sharrowandhughey/" target="_blank" rel="noopener noreferrer">
+        <span>Instagram</span><span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="social-link" href="https://www.tiktok.com/@sharrowandhughey" target="_blank" rel="noopener noreferrer">
+        <span>TikTok</span><span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </nav>
+
+    <footer>Sharrow and Hughey</footer>
+  </main>
+</body>
+</html>
